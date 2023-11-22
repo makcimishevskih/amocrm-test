@@ -8,15 +8,13 @@ import Container from '../shared/Container';
 function App() {
   return (
     <div className={css.app}>
-      <div className={css.bg}>
-        <Container>
-          <Header />
-        </Container>
-        <Content />
-        <Container>
-          <Footer />
-        </Container>
-      </div>
+      <Container>
+        <Header />
+      </Container>
+      <Content />
+      <Container>
+        <Footer />
+      </Container>
     </div>
   );
 }

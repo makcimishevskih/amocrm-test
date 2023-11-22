@@ -6,6 +6,7 @@
   &__phone {
     width: 143px;
     margin-right: 47px;
+
     &:hover {
       opacity: 0.6;
     }
@@ -30,9 +31,11 @@
     flex-direction: column;
     gap: 10px;
     align-items: flex-end;
+
     &__phone {
       margin-right: 0;
     }
+
     &__list {
       display: flex;
     }
