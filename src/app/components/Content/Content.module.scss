@@ -1,0 +1,27 @@
+@import '../../../styles/vars.scss';
+
+.content__bg {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .content__bg {
+    .content {
+      flex-direction: column;
+      padding: 40px 0px 55px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__bg {
+    background: url('../../../assets/bg-mobile/bg-mobile.png') 100% 100%
+      no-repeat;
+    background-size: contain;
+  }
+}

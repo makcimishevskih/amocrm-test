@@ -1,0 +1,19 @@
+.app {
+  height: 100%;
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+  background:
+    url('../assets/bg-desktop/red-ball.png') 36% 73px no-repeat,
+    url('../assets/bg-desktop/red-ball-mini.png') 63.5% 517px no-repeat,
+    url('../assets/bg-desktop/purple-ball.png') 67% -2px no-repeat,
+    url('../assets/bg-desktop/purple-light.png') 50% 0px no-repeat,
+    url('../assets/bg-desktop/red-light.png') -2% 251px no-repeat;
+}
+
+@media screen and (max-width: 320px) {
+  .app {
+    padding-top: 0;
+    background: none;
+  }
+}

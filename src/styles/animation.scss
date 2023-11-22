@@ -1,0 +1,38 @@
+.gradient {
+  background-image: $gradient-text;
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: rainbow-rev 0.5s ease forwards;
+
+  &:hover {
+    animation: rainbow 0.5s ease-in forwards;
+  }
+}
+
+@keyframes rainbow-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}

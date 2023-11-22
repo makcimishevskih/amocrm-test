@@ -1,0 +1,46 @@
+.contacts {
+  margin-top: 15px;
+  display: flex;
+  margin-left: auto;
+
+  &__phone {
+    width: 143px;
+    margin-right: 47px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+  }
+
+  &__item {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    &__phone {
+      margin-right: 0;
+    }
+    &__list {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .contacts {
+    display: none;
+  }
+}

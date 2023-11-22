@@ -1,0 +1,11 @@
+@import '../../../styles/vars.scss';
+
+.footer {
+  padding-top: 55px;
+}
+
+@media screen and (max-width: 970px) {
+  .footer {
+    padding-top: 45px;
+  }
+}

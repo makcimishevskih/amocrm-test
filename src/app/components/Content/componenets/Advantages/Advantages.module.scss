@@ -1,0 +1,38 @@
+@import '../../../../../styles/vars.scss';
+
+.advantages {
+  width: 300px;
+  text-align: right;
+
+  .seller__text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    margin-top: 61px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .advantages {
+    margin-left: auto;
+    max-width: 100%;
+    &__seller {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .advantages {
+    text-align: left;
+  }
+}

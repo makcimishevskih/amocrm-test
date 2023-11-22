@@ -1,0 +1,47 @@
+@import '../../../../../styles/vars.scss';
+
+.nav {
+  margin-top: 15px;
+  margin-right: 20px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+  }
+
+  &__link {
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.1s ease-in-out;
+
+    &:hover {
+      border-image: $gradient-underline;
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .nav {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav {
+    margin-top: 0;
+    &__list {
+      gap: 16px;
+    }
+
+    &__link {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    &__item:last-child {
+      display: none;
+    }
+  }
+}

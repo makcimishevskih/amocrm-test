@@ -1,0 +1,40 @@
+@import '../../../../../styles/vars.scss';
+
+.presentation {
+  max-width: 362px;
+
+  &__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  &__text {
+    font-size: 48px;
+    color: $text-light;
+  }
+
+  &__subtext {
+    max-width: 275px;
+    margin-top: 30px;
+
+    font-family: Montserrat;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .presentation {
+    margin-bottom: 45px;
+
+    &__title,
+    &__text {
+      font-size: 36px;
+    }
+
+    &__subtext {
+      margin-top: 15px;
+    }
+  }
+}

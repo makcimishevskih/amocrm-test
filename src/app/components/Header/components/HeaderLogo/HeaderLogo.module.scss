@@ -1,0 +1,26 @@
+.logo__wrapper {
+  width: 140px;
+
+  margin-top: 11px;
+  margin-right: 52px;
+
+  .logo__text {
+    margin-top: 10px;
+
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .logo__wrapper {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo__wrapper {
+    display: none;
+  }
+}

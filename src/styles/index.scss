@@ -1,0 +1,52 @@
+@import './vars.scss';
+@import './animation.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-light;
+  background-color: $bgc-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: $text-light;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}

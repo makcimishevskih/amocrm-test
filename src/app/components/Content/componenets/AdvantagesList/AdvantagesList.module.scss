@@ -1,0 +1,64 @@
+@import '../../../../../styles/vars.scss';
+
+.advantages__list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.advantages__title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  margin-top: 6px;
+  font-family: Montserrat;
+}
+
+@media screen and (max-width: 720px) {
+  .advantages__list {
+    grid-template-columns: repeat(2, 120px);
+    justify-content: flex-end;
+    text-align: left;
+    gap: 15px 25px;
+  }
+
+  .advantages__title {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    margin-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -15px;
+
+      width: 10px;
+      height: 2px;
+
+      background-image: $gradient-text;
+    }
+  }
+
+  .advantages__text {
+    display: none;
+  }
+}
+@media screen and (max-width: 379px) {
+  .advantages__list {
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
